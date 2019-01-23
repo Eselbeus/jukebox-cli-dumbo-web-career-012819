@@ -42,7 +42,7 @@ def play(my_songs)
   #if it is, play the song using the system 'open <file path>' syntax
   #get the file path of the song by looking it up in the my_songs hash
   valid = false
-  system 'open /jukebox-cli/audio/Emerald-Park/03.mp3'
+  system 'open /home/brave-programmer-8559/jukebox-cli-dumbo-web-career-012819/jukebox-cli/audio/Emerald-Park/03.mp3'
   puts "Please enter a song name or number\n"
   user_song = gets.chomp
   # my_songs.each do |song, data|
