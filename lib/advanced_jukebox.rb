@@ -45,14 +45,14 @@ def play(my_songs)
   system 'open /jukebox-cli/audio/Emerald-Park/03.mp3'
   puts "Please enter a song name or number\n"
   user_song = gets.chomp
-  my_songs.each do |song, data|
-    split_data = data.split(">")
-    path = split_data[1]
-    if user_song == song
-      system 'open /home/brave-programmer-8559/jukebox-cli-dumbo-web-career-012819/jukebox-cli/audio/Emerald-Park/01.mp3'
-      valid = true
-    end
-  end
+  # my_songs.each do |song, data|
+  #   split_data = data.split(">")
+  #   path = split_data[1]
+  #   if user_song == song
+  #     system 'open /home/brave-programmer-8559/jukebox-cli-dumbo-web-career-012819/jukebox-cli/audio/Emerald-Park/01.mp3'
+  #     valid = true
+  #   end
+  # end
   if valid == false
     puts "Invalid input, please try again\n"
   end
